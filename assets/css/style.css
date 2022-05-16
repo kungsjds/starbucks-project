@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+    height: 10px;
+    background-color: #117050;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;   
+}
+
+.header--left img {
+    width: 64px;
+    height: 64px;
+}
+
+.header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header--search form {
+    display: flex;
+}
+
+.header--search input {
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #999;
+    outline: 0;
+    padding: 8px 30px 8px 15px;
+}
+
+.header--search button { 
+    border: 0;
+    background-color: transparent;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+.header--search button img {
+    width: 20px;
+    height: 20px   
+}
+
+.header--menu {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.header--menu img {
+    width: 30px;
+    height: 30px;
+}
