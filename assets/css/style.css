@@ -70,3 +70,47 @@ body {
     width: 30px;
     height: 30px;
 }
+
+
+
+
+.banner {
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 130px);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+}
+
+.banner--images {
+    display: flex;
+    margin-top: 60px;      
+}
+
+.banner--images img {
+    width: 148px;
+    height: 148px;  
+    border: 6px solid #117050;    
+    border-radius: 50%;
+    margin-right: 40px;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.banner--images img:last-child {
+    margin-right: 0;
+}
+
+.banner--images img:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 3px 10px #171717;
+}
