@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
 
 /*
-UNIVERSAL STYLE
+UNIVERSAL STYLE START
 */
 * {
     box-sizing: border-box;
@@ -59,7 +59,9 @@ h2 {
 UNIVERSAL STYLE END
 */
 
-
+/* 
+HEADER START
+*/
 .header--area {
     display: flex;
     justify-content: space-between;
@@ -110,10 +112,14 @@ UNIVERSAL STYLE END
     width: 30px;
     height: 30px;
 }
+/* 
+HEADER END
+*/
 
 
-
-
+/* 
+BANNER START
+*/
 .banner {
     background-image: url(../images/bg.jpg);
     background-position: center;
@@ -146,8 +152,14 @@ UNIVERSAL STYLE END
     transform: scale(1.2);
     box-shadow: 2px 3px 10px #171717;
 }
+/* 
+BANNER END
+*/
 
 
+/* 
+AREA 1 START
+*/
 .area1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);    
@@ -181,7 +193,14 @@ UNIVERSAL STYLE END
     background-size: cover;
     height: 350px;
 }
+/* 
+AREA 1 END
+*/
 
+
+/* 
+AREA 2 START
+*/
 .area2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);    
@@ -211,3 +230,82 @@ UNIVERSAL STYLE END
     background-position: cover;
     height: 450px;
 }
+/* 
+AREA 2 END
+*/
+
+
+/* 
+AREA 3 START
+*/
+.area3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);      
+    background-image: url(../images/bg2.jpg);
+    background-position: left;
+    background-size: cover;   
+}
+
+.area3--content .container {
+    max-width: 490px;
+    padding: 80px 20px;
+    margin: 200px 95px 200px auto;    
+}
+
+.area3--text {
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.area3--img1 {
+    background-image: url(../images/f5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* 
+AREA 3 END
+*/
+
+
+/* 
+AREA 4 START
+*/
+.area4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #e8e9ee;
+}
+
+.area4--content .container {
+    max-width: 400px;
+    padding: 150px 50px;
+}
+
+.area4--text {
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+.area4--img1 {
+    grid-column: 2 / 4;
+    background-image: url(../images/bg3.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/* 
+AREA 4 END
+*/
+
+
+/* 
+AREA 5 START
+*/
+.area5 {
+    background-image: url(../images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+}
+/* 
+AREA 5 END
+*/
