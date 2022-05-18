@@ -309,3 +309,126 @@ AREA 5 START
 /* 
 AREA 5 END
 */
+
+
+/* 
+FOOTER START
+*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    font-size: 14px;
+}
+
+.footer--area1 {
+    margin: auto;
+    color: #e8e9ee;
+    padding: 55px;
+}
+
+.footer--area2 {
+    margin: auto;
+    color: #e8e9ee;
+    padding: 30px 50px 40px;
+    text-align: center;
+}
+
+.footer--area2 a, 
+.footer--area2 strong {
+    color: #a8f8dd;
+}
+/* 
+FOOTER END
+*/
+
+
+@media (min-width: 769px) and (max-width: 1140px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+    
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area4 {
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .area5 {
+        background-position: right;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header--search input {
+        max-width: 200px;
+    }
+
+    .header--menu {
+        margin-left: 20px;
+    }
+
+    .banner {
+        height: calc(100vh - 125px);
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .banner--images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner--images img:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+
+    .area3 .container {
+        margin: 0;
+    }
+
+    .area4 .container {
+        margin: 0;
+        padding: 100px 20px;
+    }
+
+}
