@@ -86,9 +86,10 @@ HEADER START
 .header--search input {
     font-size: 16px;
     width: 100%;
+    max-width: 250px;
     border: 1px solid #999;
     outline: 0;
-    padding: 8px 30px 8px 15px;
+    padding: 8px 15px;
 }
 
 .header--search button { 
@@ -350,6 +351,10 @@ FOOTER END
         padding-right: 20px;
     }
 
+    .banner {
+        height: auto;
+    }
+
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -361,20 +366,16 @@ FOOTER END
 
     .area1 {
         grid-template-columns: 3fr 2fr;
-    }
-    
+    }    
     .area2 {
         grid-template-columns: 2fr 3fr;
     }
-
     .area3 {
         grid-template-columns: 3fr 2fr;
     }
-
     .area4 {
         grid-template-columns: 2fr 2fr;
     }
-
     .area5 {
         background-position: right;
     }
@@ -387,32 +388,32 @@ FOOTER END
         padding-left: 20px;
         padding-right: 20px;
     }
-
-    .header--search input {
-        max-width: 200px;
+    h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 35px;
     }
 
+    .header--search input {
+        max-width: 125px;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
     .header--menu {
         margin-left: 20px;
     }
 
     .banner {
-        height: calc(100vh - 125px);
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    .banner h1 {
-        font-size: 70px;
-    }
-
-    .banner--images {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .banner--images img:nth-child(2) {
-        margin-right: 0;
+        height: auto;
+    }  
+    .banner--images img{
+        width: 70px;
+        height: 70px;
+        border: 3px solid #117050;
+        margin-right: 10px;
     }
 
     .area1,
@@ -422,13 +423,29 @@ FOOTER END
         grid-template-columns: 1fr;
     }
 
-    .area3 .container {
+    .area1--content .container,
+    .area2--content .container,
+    .area3--content .container,
+    .area4--content .container {
         margin: 0;
+        padding: 40px;
     }
 
-    .area4 .container {
-        margin: 0;
-        padding: 100px 20px;
+    .area5 {
+        height: 200px;
+        background-position: right;
     }
+
+    footer {
+        font-size: 12px;
+    }
+    .footer--area1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer--area2 {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }    
 
 }
