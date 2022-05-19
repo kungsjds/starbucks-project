@@ -113,6 +113,35 @@ HEADER START
     width: 30px;
     height: 30px;
 }
+
+.header--menu-area {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+}
+.button--menu-close {
+    text-align: right;
+    color: #FFF;
+    padding: 15px;
+    font-size: 27px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.header--menu-area li {
+    list-style: none;    
+    padding: 20px 40px;
+    text-align: center;
+}
+.header--menu-area a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 20px 50px;
+}
+.header--menu-area a:hover,
+.button--menu-close:hover {
+    color: #117050;
+}
 /* 
 HEADER END
 */
@@ -125,7 +154,7 @@ BANNER START
     background-image: url(../images/bg.jpg);
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 240px);
+    /* height: calc(100vh - 240px); */
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -192,7 +221,7 @@ AREA 1 START
     background-image: url(../images/f2.jpg);
     background-position: center;
     background-size: cover;
-    height: 350px;
+    height: 545px;
 }
 /* 
 AREA 1 END
@@ -228,8 +257,8 @@ AREA 2 START
 .area2--img2 {
     background-image: url(../images/f4.jpg);
     background-position: center;
-    background-position: cover;
-    height: 450px;
+    background-size: cover;
+    height: 550px;
 }
 /* 
 AREA 2 END
@@ -312,6 +341,25 @@ AREA 5 END
 */
 
 
+.button--scrolltop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+    right: 30px;
+    bottom: 30px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #117050;
+    font-size: 35px;
+    transform: rotate(90deg);
+    padding-bottom: 5px;
+    z-index: 999;
+}
+
+
 /* 
 FOOTER START
 */
@@ -343,7 +391,6 @@ footer {
 FOOTER END
 */
 
-
 @media (min-width: 769px) and (max-width: 1140px) {
 
     .container {
@@ -353,6 +400,13 @@ FOOTER END
 
     .banner {
         height: auto;
+    }
+
+    .area1--img2 {
+        height: 350px;
+    }  
+    .area2--img2 {
+        height: 450px;
     }
 
 }
@@ -366,9 +420,15 @@ FOOTER END
 
     .area1 {
         grid-template-columns: 3fr 2fr;
+    }
+    .area1--img2 {
+        height: 350px;
     }    
     .area2 {
         grid-template-columns: 2fr 3fr;
+    }
+    .area2--img2 {
+        height: 450px;
     }
     .area3 {
         grid-template-columns: 3fr 2fr;
@@ -416,6 +476,13 @@ FOOTER END
         margin-right: 10px;
     }
 
+    .area1--img2 {
+        height: 250px;
+    } 
+    .area2--img2 {
+        height: 300px;
+    }
+        
     .area1,
     .area2,
     .area3,
