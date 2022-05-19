@@ -18,3 +18,16 @@ function scrollToTop() {
         }
     );
 };
+
+function menuAreaToggle() {
+    const menu = document.querySelector('.header--menu-area');
+    const closeButton = document.querySelector('.button--menu-close');
+
+    if (menu.style.height == '100vh') {
+        menu.style.height = '0';
+        closeButton.style.transform = 'rotate(270deg)';
+    } else {
+        menu.style.height = '100vh';
+        closeButton.style.transform = 'rotate(90deg)';
+    };
+};

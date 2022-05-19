@@ -117,30 +117,42 @@ HEADER START
 .header--menu-area {
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 100vh;
+    height: 0;
+    background-color: rgba(17, 112, 80, 0.9);
+    overflow: hidden;
+    transition: ease 1s;
+    min-width: 245px;
+    max-width: 245px;
 }
 .button--menu-close {
-    text-align: right;
+    display: inline-block;
+    margin-left: 80%;
     color: #FFF;
     padding: 15px;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 700;
     cursor: pointer;
+    transform: rotate(90deg);
+    transition: ease 0.5s;
 }
+/* 
+Transitions reference
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed
+ */
 .header--menu-area li {
     list-style: none;    
     padding: 20px 40px;
     text-align: center;
+    font-weight: 600;
 }
 .header--menu-area a {
     text-decoration: none;
     color: #FFF;
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
 }
 .header--menu-area a:hover,
 .button--menu-close:hover {
-    color: #117050;
+    color: #000;
 }
 /* 
 HEADER END
